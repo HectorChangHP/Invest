@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #87CEEB; /* Sky blue background */
+    color: #333;
+}
+
+.header {
+    background-color: #2F4F4F; /* Dark slate gray */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.image-section {
+    background-color: #DC143C; /* Crimson red for the bench */
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-section {
+    text-align: center;
+    max-width: 800px;
+    background-color: #FFFFFF; /* White background for text */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #2F4F4F; /* Dark slate gray */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .main-content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .text-section {
+        max-width: 50%;
+    }
+}
